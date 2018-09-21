@@ -1,0 +1,75 @@
+/* ORIGINAL
+* Theme Name: Tyger
+* File name: style.css
+* Theme URL: tyger.mordorthemes.com
+* Description: Tyger - Beautiful onepage template
+* Author: Mordorthemes
+* Author URL: http://www.mordorthemes.com
+* Support: support@mordorthemes.com
+* Version: 1.0
+*/
+
+
+/*------------------------------------------------------
+
+CSS TABLE OF CONTENTS: 
+
+1. IMPORTING EXTERNAL CSS
+
+---------------------------------------------------------*/
+
+@import url("normalize.css");
+@import url("foundation.css");
+@import url("owl-carousel.css");
+@import url("owl.transitions.css");
+@import url("animate.css");
+@import url("tyger-fonts.css");
+@import url("navigation.css");
+@import url("cubeportfolio.css");
+@import url("layout.css"); 
+
+
+
+/* Further Customization */
+
+header {
+    /* background-color: black; */
+    /* height of header banner,  */
+    background-color: #fff;
+}
+
+header.shrink {
+    background-color: #fff;
+}
+
+/* main logo */
+#main-logo {
+     
+}
+
+
+/* navlist adjustment */
+.nav-list {
+    margin-top: 10px;
+}
+/* navlist elements */
+.nav-list .menu-list li a {
+    color: #1A1A1A;
+}
+
+/* Work */
+#about {
+    background-color: #CCCCB8;
+}
+
+/* Extra Tinkering with Mobile Mode */
+@media only screen and (max-width: 640px) {
+
+    /* center title + logo in mobile mode */
+    /* h1 {
+        text-align: center;
+    } */
+    h1.logo {
+        margin-left: 125px;
+    }
+}

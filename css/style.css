@@ -1,0 +1,93 @@
+@import url("normalize.css");
+@import url("foundation.css");
+@import url("owl-carousel.css");
+@import url("owl.transitions.css");
+@import url("animate.css");
+@import url("tyger-fonts.css");
+@import url("navigation.css");
+@import url("cubeportfolio.css");
+@import url("layout.css");
+/* Further Customization */
+/* header */
+header {
+  /* background-color: black */
+  /* height of header banner,  */
+  background-color: #fff;
+  /* main logo */
+  /* navlist adjustment */
+  /* Mobile */ }
+  header #main-logo {
+    transform: scale(0.3);
+    display: inline; }
+  header #main-title {
+    margin-top: 15px;
+    transform: scale(1.2);
+    display: inline; }
+    header #main-title .cls-1 {
+      fill: #1A1A1A; }
+  header .nav-list {
+    margin-top: 11px;
+    /* navlist elements */ }
+    header .nav-list .menu-list li a {
+      color: #1A1A1A; }
+    header .nav-list .social-media {
+      height: 20px;
+      width: 20px;
+      cursor: pointer;
+      margin: 0 10px;
+      transition: all 300ms ease-in;
+      transform: translateY(-5px);
+      z-index: 2; }
+      header .nav-list .social-media:hover {
+        fill: #FFB2B2; }
+  header .show-for-devices > li {
+    transition: all 400ms ease-in-out;
+    background-color: #fff;
+    opacity: 1;
+    animation: mobile-nav 400ms ease-in-out forwards; }
+    header .show-for-devices > li:last-child {
+      margin-bottom: 10px; }
+  header .tyger-navicon {
+    color: #1A1A1A; }
+
+header.shrink {
+  background-color: #fff; }
+  header.shrink .menu-toggle-button {
+    border: none; }
+
+/* Projects */
+section#works {
+  background-color: #1A1A1A; }
+  section#works .section-desc h4, section#works .section-desc p {
+    color: #ddd; }
+
+/* RESPONSIVE DESIGN */
+/* Extra Tinkering with Mobile Mode */
+@media only screen and (max-width: 640px) {
+  /* center title + logo in mobile mode */
+  h1.logo {
+    margin-left: 98px; }
+    h1.logo #main-logo {
+      transform: scale(1.8); }
+
+  .nav-list .social-media {
+    margin-top: 25px; }
+
+  .social-media {
+    display: none; } }
+/* Extra Tinkering with Tablet Mode */
+@media (min-width: 641px) and (max-width: 1249px) {
+  /* center title + logo in mobile mode */
+  h1.logo {
+    margin-left: 30px; }
+    h1.logo #main-logo {
+      transform: scale(1.3); } }
+@keyframes mobile-nav {
+  0% {
+    transform: scaleY(0.2);
+    opacity: 0; }
+  100% {
+    transform: scaleY(1);
+    opacity: 1; } }
+
+/*# sourceMappingURL=style.css.map */
