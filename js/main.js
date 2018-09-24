@@ -12,9 +12,11 @@ serviceBtn.addEventListener('click', () => {
     if(!expanded) {
         serviceMore.classList.add('active');
         expanded = true;
+        serviceBtn.innerHTML = "Close <i class=\"fas fa-arrow-up\"></i>";
     }
     else {
         serviceMore.classList.remove('active');
         expanded = false;
+        serviceBtn.innerHTML = "More";
     }
 });

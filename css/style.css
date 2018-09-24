@@ -56,6 +56,11 @@ header.shrink {
   header.shrink .menu-toggle-button {
     border: none; }
 
+#slider .slider-caption h2 {
+  font-size: 69px; }
+#slider .slider-caption p {
+  font-size: 20px; }
+
 #wrapper {
   /* Projects */
   /* Contacts */
@@ -63,7 +68,8 @@ header.shrink {
   #wrapper section#services {
     background-color: #1A1A1A; }
     #wrapper section#services .section-desc h4, #wrapper section#services .section-desc p {
-      color: #ddd; }
+      color: #ddd;
+      font-size: 20px; }
     #wrapper section#services .service i {
       color: #ddd;
       margin-bottom: 15px; }
@@ -83,9 +89,9 @@ header.shrink {
     #wrapper section#services .services-container {
       display: none;
       margin-top: 50px;
-      text-align: center;
-      animation: slide-out 400ms ease-in-out forwards; }
+      text-align: center; }
       #wrapper section#services .services-container.active {
+        animation: slide-out 400ms ease-in-out forwards;
         display: block;
         transition: 300ms ease-in; }
       #wrapper section#services .services-container .columns {
@@ -104,12 +110,18 @@ header.shrink {
       background-color: #243b4e; }
   #wrapper section#contacts {
     margin-bottom: 70px; }
-    #wrapper section#contacts .about p {
-      font-size: 16px; }
+    #wrapper section#contacts .about {
+      animation: highlight-exit 300ms ease-in-out forwards;
+      transition: 300ms ease-in-out; }
+      #wrapper section#contacts .about p {
+        font-size: 18px; }
+      #wrapper section#contacts .about:hover {
+        animation: highlight 300ms ease-in-out forwards; }
   #wrapper section#clients .clients-title {
     font-size: 40px;
     color: #3c6382;
-    font-family: "Big Noodle Oblique", serif; }
+    font-family: "Big Noodle", serif;
+    font-style: normal; }
 
 /* RESPONSIVE DESIGN */
 /* Extra Tinkering with Mobile Mode */
@@ -151,6 +163,23 @@ header.shrink {
   0% {
     transform: translateY(-100px);
     opacity: 0.1; }
+  100% {
+    transform: translateY(0); } }
+@keyframes slide-in {
+  0% {
+    transform: translateY(0);
+    opacity: 1; }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0.1; } }
+@keyframes highlight {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-10px); } }
+@keyframes highlight-exit {
+  0% {
+    transform: translateY(-10px); }
   100% {
     transform: translateY(0); } }
 
