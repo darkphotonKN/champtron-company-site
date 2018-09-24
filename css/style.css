@@ -72,8 +72,36 @@ header.shrink {
       color: #ddd; }
     #wrapper section#services .service p {
       font-size: 20px; }
+    #wrapper section#services .services-main {
+      display: block;
+      padding-left: 20px;
+      text-align: center;
+      animation: slide-out 400ms ease-in-out forwards; }
+      #wrapper section#services .services-main .columns {
+        display: flex;
+        justify-content: center; }
+    #wrapper section#services .services-container {
+      display: none;
+      margin-top: 50px;
+      text-align: center;
+      animation: slide-out 400ms ease-in-out forwards; }
+      #wrapper section#services .services-container.active {
+        display: block;
+        transition: 300ms ease-in; }
+      #wrapper section#services .services-container .columns {
+        display: flex;
+        justify-content: center; }
     #wrapper section#services .cbp-item-wrapper {
       border: none; }
+    #wrapper section#services .service-btn {
+      text-align: center; }
+      #wrapper section#services .service-btn .button {
+        margin-top: 50px;
+        border-radius: 4px; }
+    #wrapper section#services button {
+      transition: 300ms ease-in; }
+    #wrapper section#services button:hover {
+      background-color: #243b4e; }
   #wrapper section#contacts {
     margin-bottom: 70px; }
     #wrapper section#contacts .about p {
@@ -111,6 +139,7 @@ header.shrink {
     margin-left: 440px;
     color: black;
     transform: scale(1.4); } }
+/* Animations */
 @keyframes mobile-nav {
   0% {
     transform: scaleY(0.2);
@@ -118,5 +147,11 @@ header.shrink {
   100% {
     transform: scaleY(1);
     opacity: 1; } }
+@keyframes slide-out {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0.1; }
+  100% {
+    transform: translateY(0); } }
 
 /*# sourceMappingURL=style.css.map */
