@@ -67,9 +67,6 @@ Preload
 }
 
 
-
-
-
 /* ==============================================
 Generic Styles
 =============================================== */
@@ -105,8 +102,23 @@ section#service-detail{
 /* ==============================================
 Typography
 =============================================== */
+@font-face {
+
+	font-family: 'Big Noodle' ;
+	src: url('../fonts/big_noodle_titling.ttf') format('truetype');
+ 
+}
+
+@font-face {
+
+	font-family: 'Big Noodle Oblique' ;
+	src: url('../fonts/big_noodle_titling_oblique.ttf') format('truetype');
+ 
+}
+
+
 body {
-	font-family: "Raleway", serif;
+	font-family: "Big Noodle", serif;
 }
 
 p {
@@ -115,14 +127,14 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Montserrat", serif;
+	font-family: "Big Noodle Oblique", serif;
 	letter-spacing: -1px;
 }
 
 h1.logo a:link, h1.logo a:visited   {
 	bottom: 4px;
     color: #fff;
-    font-family: "Montserrat",serif;
+    font-family: "Big Noodle",serif;
     font-size: 1.6rem;
     font-weight: 900;
     letter-spacing: -1px;
@@ -142,7 +154,7 @@ h1.logo a:link, h1.logo a:visited   {
  .subtitle.white h2, .subtitle-detail.white h2, .subtitle-detail h2 {
 	color: #fff;
 	font-weight: 900;
-	font-family: "Montserrat", serif;
+	font-family: "Big Noodle", serif;
 	/*text-transform:uppercase;*/
 }
 
@@ -211,7 +223,7 @@ li.active a{
 }
 
 .menu-list a{
-	font-family: "Montserrat", serif;
+	font-family: "Big Noodle", serif;
 	font-weight:700;
 }
 
@@ -247,7 +259,7 @@ Main Slider
 }
 
 .slider-caption h2 {
-	font-family: "Montserrat", serif;
+	font-family: "Big Noodle", serif;
 	font-size: 3.2rem;
 	color: #fff;
 	letter-spacing: -3px;
@@ -360,7 +372,7 @@ Title section
 
 .title-section h3 {
 	color: #ff4444;
-	font-family: "Montserrat", serif;
+	font-family: "Big Noodle", serif;
 	border-right: 1px solid #eceaea;
 	/*text-transform:uppercase;*/
 	font-weight: 700;
@@ -424,7 +436,7 @@ Counter
 	font-weight: 900;
 	font-size: 1.6rem;
 	line-height: 2.2rem;
-	font-family: "Montserrat", serif;
+	font-family: "Big Noodle", serif;
 }
 
 .number-detail {
@@ -665,7 +677,7 @@ section#detail {
    /* top: 50% !important;*/
 }
 .cbp-l-grid-projects-title{
-	font-family:'Montserrat', sans-serif;
+	font-family:'Big Noodle', sans-serif;
 	color:#fff;
 	font-size:1.4rem;
 	padding:10px 0px;
@@ -710,7 +722,7 @@ section#detail {
 }
 .cbp-popup-singlePage-counter{
 	color:#fff;
-	font-family:'Montserrat', sans-serif;
+	font-family:'Big Noodle', sans-serif;
 }
 .cbp-popup-singlePage .cbp-popup-content{
 	margin-top:80px;
@@ -882,7 +894,7 @@ div.about {
 div.about p {
 	font-size: 12px;
 	margin-bottom: 0px;
-	font-family:'Montserrat', sans-serif;
+	font-family:'Big Noodle', sans-serif;
 }
 
 
@@ -1075,7 +1087,7 @@ Accordions
 	padding: 5px 15px;
 	cursor: pointer;
 	color: #222;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Big Noodle', sans-serif;
 	text-transform: uppercase;
 	background: none !important;
 }
@@ -1368,7 +1380,7 @@ ul.pagination li.arrow{
 }
 ul.pagination li a {
 	border-radius: 0px;
-	font-family: "Montserrat", serif;
+	font-family: "Big Noodle", serif;
 }
 
 .advertise, .text-widget, div.archive {
