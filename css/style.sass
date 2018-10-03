@@ -21,6 +21,13 @@
 // FURTHER CUSTOMIZATION
 // ------------------------------------------------------//
 
+// fonts 
+@font-face 
+    font-family: 'bignoodletitlingregular'
+    src: url('../fonts/big_noodle_titling-webfont.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
 // Variables
 $main-theme: #3c6382
 
@@ -88,7 +95,20 @@ header.shrink
     .menu-toggle-button
         border: none
 
+// Special Fonts 
 
+
+#slider 
+    p.lead 
+        font-family: '微软雅黑', sans-serif
+
+.section-desc 
+    h4, p 
+        font-family: '微软雅黑', sans-serif
+
+span.english-desc 
+    font-family: 'bignoodletitlingregular', sans-serif
+    font-size: 24px 
 
 ///// MAIN SECTIONS /////
 
@@ -112,7 +132,6 @@ header.shrink
     //             color: #ddd
 
 
-
     /* Projects */
 
     section#services 
@@ -121,16 +140,25 @@ header.shrink
         .section-desc
             h4, p
                 color: #ddd
-                font-size: 20px
+                font-family: '微软雅黑', sans-serif
+            h4 
+                font-size: 18px
+            p 
+                font-size: 16px
+                
         .service
             i 
                 color: #ddd 
                 margin-bottom: 15px
-            h5, p  
-                font-family: 'raleway', sans-serif
+            h5, p 
                 color: #ddd
-            p 
-                font-size: 20px
+            h5    
+                font-family: 'bignoodletitlingregular', sans-serif
+                font-size: 24px
+                 
+            p  
+                font-family: '微软雅黑', sans-serif
+                font-size: 18px
         
         // main services showcase
         .services-main 
@@ -148,10 +176,15 @@ header.shrink
             display: none
             margin-top: 50px
             text-align: center
+            transition: 300ms ease-in
 
             &.active 
                 animation: slide-out 600ms ease-in-out forwards 
                 display: block
+                transition: 300ms ease-in
+            &.close 
+                animation: slide-in 600ms ease-in-out forwards 
+                display: none
                 transition: 300ms ease-in
 
             .columns 
@@ -167,13 +200,14 @@ header.shrink
             text-align: center
             
             .button 
+                font-family: 'bignoodletitlingregular', sans-serif
                 height: 40px
                 width: 90px
                 padding: 0
                 margin-top: 50px
                 border-radius: 4px
 
-        button 
+        button, a 
             transition: 300ms ease-in 
         button:hover 
             background-color: darken($main-theme, 15%)
@@ -204,6 +238,9 @@ header.shrink
             font-style: normal
 
 
+    /* Work */
+
+    
 
 
 /* RESPONSIVE DESIGN */
@@ -271,7 +308,7 @@ header.shrink
         opacity: 1
     100% 
         transform: translateY(-100px)
-        opacity: 0.1
+        opacity: 0
 
 @keyframes highlight
     0% 
@@ -284,3 +321,5 @@ header.shrink
         transform: translateY(-10px) 
     100% 
         transform: translateY(0) 
+
+

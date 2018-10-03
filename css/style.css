@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("normalize.css");
 @import url("foundation.css");
 @import url("owl-carousel.css");
@@ -7,6 +8,11 @@
 @import url("navigation.css");
 @import url("cubeportfolio.css");
 @import url("layout.css");
+@font-face {
+  font-family: "bignoodletitlingregular";
+  src: url("../fonts/big_noodle_titling-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 /* header */
 header {
   /* height of header banner,  */
@@ -54,6 +60,16 @@ header.shrink {
   header.shrink .menu-toggle-button {
     border: none; }
 
+#slider p.lead {
+  font-family: "微软雅黑", sans-serif; }
+
+.section-desc h4, .section-desc p {
+  font-family: "微软雅黑", sans-serif; }
+
+span.english-desc {
+  font-family: "bignoodletitlingregular", sans-serif;
+  font-size: 24px; }
+
 #slider .slider-caption h2 {
   font-size: 69px; }
 #slider .slider-caption p {
@@ -62,20 +78,28 @@ header.shrink {
 #wrapper {
   /* Projects */
   /* Contacts */
-  /* Clients */ }
+  /* Clients */
+  /* Work */ }
   #wrapper section#services {
     background-color: #1A1A1A; }
     #wrapper section#services .section-desc h4, #wrapper section#services .section-desc p {
       color: #ddd;
-      font-size: 20px; }
+      font-family: "微软雅黑", sans-serif; }
+    #wrapper section#services .section-desc h4 {
+      font-size: 18px; }
+    #wrapper section#services .section-desc p {
+      font-size: 16px; }
     #wrapper section#services .service i {
       color: #ddd;
       margin-bottom: 15px; }
     #wrapper section#services .service h5, #wrapper section#services .service p {
-      font-family: "raleway", sans-serif;
       color: #ddd; }
+    #wrapper section#services .service h5 {
+      font-family: "bignoodletitlingregular", sans-serif;
+      font-size: 24px; }
     #wrapper section#services .service p {
-      font-size: 20px; }
+      font-family: "微软雅黑", sans-serif;
+      font-size: 18px; }
     #wrapper section#services .services-main {
       display: block;
       padding-left: 20px;
@@ -87,10 +111,15 @@ header.shrink {
     #wrapper section#services .services-container {
       display: none;
       margin-top: 50px;
-      text-align: center; }
+      text-align: center;
+      transition: 300ms ease-in; }
       #wrapper section#services .services-container.active {
         animation: slide-out 600ms ease-in-out forwards;
         display: block;
+        transition: 300ms ease-in; }
+      #wrapper section#services .services-container.close {
+        animation: slide-in 600ms ease-in-out forwards;
+        display: none;
         transition: 300ms ease-in; }
       #wrapper section#services .services-container .columns {
         display: flex;
@@ -100,12 +129,13 @@ header.shrink {
     #wrapper section#services .service-btn {
       text-align: center; }
       #wrapper section#services .service-btn .button {
+        font-family: "bignoodletitlingregular", sans-serif;
         height: 40px;
         width: 90px;
         padding: 0;
         margin-top: 50px;
         border-radius: 4px; }
-    #wrapper section#services button {
+    #wrapper section#services button, #wrapper section#services a {
       transition: 300ms ease-in; }
     #wrapper section#services button:hover {
       background-color: #243b4e; }
@@ -172,7 +202,7 @@ header.shrink {
     opacity: 1; }
   100% {
     transform: translateY(-100px);
-    opacity: 0.1; } }
+    opacity: 0; } }
 @keyframes highlight {
   0% {
     transform: translateY(0); }

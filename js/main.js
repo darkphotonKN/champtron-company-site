@@ -10,12 +10,14 @@ var expanded = false;
 serviceBtn.addEventListener('click', () => {
     console.log("Working");
     if(!expanded) {
+		serviceMore.classList.remove('close');
         serviceMore.classList.add('active');
         expanded = true;
         serviceBtn.innerHTML = "Close <i class=\"fas fa-arrow-up\"></i>";
     }
     else {
-        serviceMore.classList.remove('active');
+		serviceMore.classList.add('close');
+		setTimeout(() => serviceMore.classList.remove('active'), 100);
         expanded = false;
         serviceBtn.innerHTML = "More";
     }
