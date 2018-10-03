@@ -15,7 +15,11 @@
 @import url("layout.css") 
 
 
-/* Further Customization */
+
+
+// ------------------------------------------------------//
+// FURTHER CUSTOMIZATION
+// ------------------------------------------------------//
 
 // Variables
 $main-theme: #3c6382
@@ -23,7 +27,6 @@ $main-theme: #3c6382
 
 /* header */
 header 
-    /* background-color: black */
     /* height of header banner,  */
     background-color: #fff
 
@@ -147,7 +150,7 @@ header.shrink
             text-align: center
 
             &.active 
-                animation: slide-out 400ms ease-in-out forwards 
+                animation: slide-out 600ms ease-in-out forwards 
                 display: block
                 transition: 300ms ease-in
 
@@ -162,9 +165,14 @@ header.shrink
         // "more" button
         .service-btn 
             text-align: center
+            
             .button 
+                height: 40px
+                width: 90px
+                padding: 0
                 margin-top: 50px
                 border-radius: 4px
+
         button 
             transition: 300ms ease-in 
         button:hover 
@@ -218,6 +226,7 @@ header.shrink
     
     .social-media 
         display: none
+
 
 /* Extra Tinkering with Tablet Mode */
 @media (min-width: 641px) and (max-width: 1249px) 

@@ -318,11 +318,11 @@ a.slider-link:hover {
 }
 
 .bg1 {
-	background: url(../img/slider/bg_secondary.jpg);
+	/* background: url(../img/slider/bg_main.jpg); */
 }
 
 .bg2 {
-	background: url(../img/slider/bg_main.jpg);
+	background: url(../img/slider/bg_secondary.jpg);
 }
 
 .bg3 {
